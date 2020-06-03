@@ -15,16 +15,20 @@ const business = {
   reviewCount: 90
 };
 
+// Array of businesses
 const businesses = [business, business, business, business, business];
 
+// create App component 
 function App() {
   return (
     <div className="App">
       <h1>ravenous</h1>
       <SearchBar />
+      {/* pass business array to Business list instance */}
       <BusinessList businesses={businesses} />
     </div>
   );
 }
 
+// export App component
 export default App;

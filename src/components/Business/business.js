@@ -2,9 +2,10 @@ import React from 'react';
 import './business.css';
 
 
-
+// Create a business component 
 class Business extends React.Component{
     render(){
+        // render the business instance with props passed in 
         return (
             <div className="Business">
                 <div className="image-container">
