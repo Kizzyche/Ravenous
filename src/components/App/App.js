@@ -19,15 +19,23 @@ const business = {
 const businesses = [business, business, business, business, business];
 
 // create App component 
-function App() {
-  return (
-    <div className="App">
-      <h1>ravenous</h1>
-      <SearchBar />
-      {/* pass business array to Business list instance */}
-      <BusinessList businesses={businesses} />
-    </div>
-  );
+class App extends React.Component{
+
+  searchYelp(term, location, sortBy){
+    console.log('Searching Yelp with Pizza, Brooklyn, best_match')
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <h1>ravenous</h1>
+        <SearchBar searchYelp={this.searchYelp} />
+        {/* pass business array to Business list instance */}
+        <BusinessList businesses={businesses} />
+      </div>
+    );
+  }
+  
 }
 
 // export App component
