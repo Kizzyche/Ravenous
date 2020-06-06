@@ -60,7 +60,7 @@ class SearchBar extends React.Component{
                 {sortByOption}</li>
         })
     }
-
+h
     render(){
         return (
             <div className="SearchBar">
@@ -74,7 +74,7 @@ class SearchBar extends React.Component{
                 </div>
                 <div className="SearchBar-submit">
                 
-                    <a href="www.google.com" onClick={this.handleSearch}>Let's Go</a>
+                    <a onClick={this.handleSearch}>Let's Go</a>
                 </div>
             </div>
         );
