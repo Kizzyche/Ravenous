@@ -50,3 +50,9 @@
     font-size: .88rem;
     line-height: 1rem;
   }
+
+  a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
